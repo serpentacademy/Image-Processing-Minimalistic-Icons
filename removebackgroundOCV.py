@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-
+#pip install opencv-contrib-python
 def remove_light_background(image_path, output_path):
     # Load image
     img = cv2.imread(image_path)
@@ -10,7 +10,7 @@ def remove_light_background(image_path, output_path):
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
     # Define a mask using color thresholding
-    lower_bound = np.array([0, 0, 170])  # Adjust these values based on the specific background color
+    lower_bound = np.array([0, 0, 130])  # Adjust these values based on the specific background color
     upper_bound = np.array([180, 255, 255])
     mask = cv2.inRange(hsv, lower_bound, upper_bound)
 
@@ -29,6 +29,6 @@ def remove_light_background(image_path, output_path):
 
 
 # Usage
-image_path = "C:\\Users\\neocr\\Documents\\Prompts\\Icons\\HomeGreyI.png"
-output_path = "C:\\Users\\neocr\\Documents\\Prompts\\Icons\\HomeGreyINGB.png"
+image_path = "/Users/asc/Documents/Prompts/Icons/Search_2GNOBG.png"
+output_path = "/Users/asc/Documents/Prompts/Icons/Search_2GNOBGFinal.png"
 remove_light_background(image_path, output_path)

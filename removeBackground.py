@@ -1,4 +1,5 @@
 from PIL import Image
+#pip install Pillow
 
 
 def remove_light_background(image_path, output_path, threshold=200):
@@ -22,6 +23,6 @@ def remove_light_background(image_path, output_path, threshold=200):
 
 
 # Usage
-image_path = "C:\\Users\\neocr\\Documents\\Prompts\\Icons\\User_Final.png"
-output_path = "C:\\Users\\neocr\\Documents\\Prompts\\Icons\\User_FinalNOBG.png"
+image_path = "/Users/asc/Documents/Prompts/Icons/Search_2G.png"
+output_path = "/Users/asc/Documents/Prompts/Icons/Search_2GNOBG.png"
 remove_light_background(image_path, output_path)

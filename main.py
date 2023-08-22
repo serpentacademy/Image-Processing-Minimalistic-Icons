@@ -1,5 +1,7 @@
 from PIL import Image
 
+#pip install opencv-python
+#python -m pip install Pillow
 
 def convert_to_greyscale(image_path, output_path):
     # Open the image
@@ -15,6 +17,6 @@ def convert_to_greyscale(image_path, output_path):
 
 
 # Usage
-image_path = "C:\\Users\\neocr\\Documents\\Prompts\\Icons\\Home.png"
-output_path = "C:\\Users\\neocr\\Documents\\Prompts\\Icons\\HomeGrey.png"
+image_path = "/Users/asc/Documents/Prompts/Icons/Push.png"
+output_path = "/Users/asc/Documents/Prompts/Icons/PushG.png"
 convert_to_greyscale(image_path, output_path)
